@@ -1,0 +1,1010 @@
+
+
+.bg-primary-dark {
+    background-color: var(--bg-primary-dark) !important;
+    color: var(--text-primary) !important;
+}
+
+.bride-sub{
+    color: var(--bg-primary) !important;
+}
+.bride-content{
+    background-color: var(--bs-primary-light);
+    border-radius: 500px 500px 0 0;
+    padding-top: 75px;
+}
+.bg-primary-light {
+    background-color: var(--bs-primary-light) !important;
+    color: var(--text-primary) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+#gallery .text-secondary {
+    color: var(--bs-primary) !important;
+}
+
+.text-gold {
+    color: var(--bs-primary) !important;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--invitation-bg);
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+    color: var(--bs-primary);
+}
+
+.bg-navigation {
+    background-color: var(--bs-text-light);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary) !important;
+    color: var(--bs-text-light) !important;
+}
+
+.bg-livestreaming {
+    background-color: var(--bs-secondary) !important;
+    color: var(--bs-text-light) !important;
+}
+
+#modalInvitation .modal-content {
+    background-color: var(--invitation-bg);
+}
+
+html body {
+    background-color: var(--invitation-bg);
+    font-family: "Times New Roman", serif;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
+    background-attachment: fixed;
+}
+
+.font-title {
+    font-family: "Pirata One", serif;
+}
+
+.font-content {
+    font-family: "Pinyon Script", serif;
+}
+
+#cover .title,
+#modalInvitation .title {
+    font-size: 32px !important;
+}
+.img-flip-x{
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+#cover .sub-title {
+    font-size: 28px !important;
+}
+
+.badge-countdown {
+    background-color: var(--bs-primary);
+}
+.schedule-bg{
+    border-radius: 500px 500px 0 0;
+    outline: var(--bg-primary) 2px solid;
+    background: white;
+}
+.top-round-bg{
+    border-radius: 500px 500px 0 0;
+}
+#countdown .badge-primary {
+    color: var(--bg-primary) !important;
+    background-color: var(--bs-secondary) !important;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.label-countdown {
+    margin-left: 0;
+}
+
+.splide__arrow {
+    background: var(--bs-primary);
+}
+
+.splide--nav
+> .splide__slider
+> .splide__track
+> .splide__list
+> .splide__slide.is-active,
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+    border: 3px solid var(--bs-primary);
+}
+
+.splide__arrow svg {
+    fill: var(--bs-primary-light);
+}
+
+.form-control.form-control-solid {
+    background-color: var(--invitation-bg) !important;
+    border-color: #757575;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown.show > .form-control.form-control-solid,
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+    background-color: var(--invitation-bg);
+    border-color: var(--bs-primary);
+}
+
+.bg-avatar .symbol {
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 30%);
+    outline: 4px solid var(--bs-secondary);
+    outline-offset: -12px;
+}
+
+.border-avatar {
+    position: fixed;
+    height: 150px !important;
+    width: auto !important;
+    left: -31px;
+    z-index: -1;
+}
+
+
+.btn-secondary,
+.btn-secondary .bi,
+.btn-secondary .fas {
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-text-light) !important;
+}
+
+.btn-light,
+.btn-light .bi,
+.btn-light .fas {
+    background-color: var(--bs-primary-light) !important;
+    color: var(--bs-primary) !important;
+}
+
+
+#ig-stories .bi {
+    background-color: var(--bs-secondary-light) !important;
+    color: var(--bs-secondary) !important;
+}
+
+.badge-primary {
+    color: var(--invitation-bg) !important;
+}
+
+.nav-link {
+    color: var(--text-primary) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: white !important;
+    background-color: var(--bs-primary) !important;
+    border-radius: 50px;
+    width: 75px;
+}
+.gradient-white{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 81%, rgba(0,0,0,0) 100%);
+}
+
+.svg-icon.svg-icon-primary svg [fill]:not(.permanent):not(g) {
+    fill: var(--invitation-bg) !important;
+}
+
+.splide__arrow svg {
+    fill: var(--invitation-bg) !important;
+}
+
+.bg-cover {
+    position: relative;
+    opacity: 1;
+    background-size: cover !important;
+    background-position: top center !important;
+}
+
+.timeline .timeline-line {
+    border-left-color: var(--bs-secondary);
+}
+
+.border-primary {
+    border-color: var(--text-primary) !important;
+}
+
+.border-black {
+    border-color: #000000 !important;
+}
+
+.padding-welcome {
+    position: relative;
+    padding: 10px 20px; /* Padding for content */
+    margin: 20px; /* Margin for spacing */
+}
+
+.frame-border {
+    position: relative;
+    margin: 0 20px 0 20px;
+}
+
+.frame-border-top {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-top::before {
+    content: '';
+    position: absolute;
+    top: 20px; /* Position at the top */
+    left: 119px; /* Adjust as needed */
+    width: calc(100% - 240px); /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-border-full-top {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-full-top::before {
+    content: '';
+    position: absolute;
+    top: 60px; /* Position at the top */
+    left: 119px; /* Adjust as needed */
+    width: 100%; /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-border-full-bottom {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-full-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 60px; /* Position at the bottom */
+    left: 119px; /* Adjust as needed */
+    width: 100%; /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-margin {
+    margin-top: -60px;
+}
+
+.m-border {
+    margin-left: 2vh !important;
+    margin-right: 2vh !important;
+}
+
+/* .btn.btn-secondary {
+    color: #ffffff;
+    border-color: var(--bs-secondary) !important;
+    background-color: var(--bs-secondary) !important;
+} */
+.rounded {
+    border-radius: 30px !important;
+    overflow: hidden;
+}
+
+.rounded-sm {
+    border-radius: 10px !important;
+}
+
+.rounded-xxl {
+    border-radius: 50px !important;
+}
+
+.rounded-1 {
+    border-radius: 16px !important;
+}
+
+.rounded-2 {
+    border-radius: 24px !important;
+}
+
+.text-light {
+    color: var(--bs-text-light) !important;
+}
+
+.animate-zoom-in-out {
+    animation: zoom-in-zoom-out 2s ease infinite;
+    transform-origin: bottom center;
+}
+
+.bg-invitation {
+    background-color: var(--invitation-bg);
+}
+
+.bg-invitation-light {
+    background-color: var(--invitation-bg-light);
+}
+
+.bg-invitation-dark {
+    background-color: var(--invitation-bg);
+}
+
+.btn-primary,
+.btn-primary .bi,
+.btn-primary .fas {
+    color: white !important;
+}
+
+#modalInvitation .btn-primary,
+#modalInvitation .btn-primary .bi,
+#modalInvitation .btn-primary .fas {
+    background-color: var(--bs-primary) !important;
+}
+
+#schedule .btn-primary,
+#schedule .btn-primary .bi,
+#schedule .btn-primary .fas {
+    color: white !important;
+    background-color: var(--bg-primary) !important;
+}
+
+#wish button[type="submit"].btn-primary,
+#wish button[type="submit"].btn-primary .bi,
+#wish button[type="submit"].btn-primary .fas {
+    color: white !important;
+    background-color: var(--bg-primary) !important;
+}
+
+.btn-rsvp {
+    color: white !important;
+    background-color: var(--bg-primary) !important;
+}
+
+.btn-check:checked + .btn.btn-secondary, .btn-check:active + .btn.btn-secondary, .btn.btn-secondary:focus:not(.btn-active), .btn.btn-secondary:hover:not(.btn-active), .btn.btn-secondary:active:not(.btn-active), .btn.btn-secondary.active, .btn.btn-secondary.show, .show > .btn.btn-secondary {
+    color: #FFFFFF;
+    border-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary) !important;
+}
+
+.square-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.square-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.square-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.square-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.square-bottom-left {
+    border-bottom-left-radius: 0 !important;
+}
+
+.right-0 {
+    right: 0;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+li.splide__slide {
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px !important;
+}
+
+.splide--nav
+> .splide__slider
+> .splide__track
+> .splide__list
+> .splide__slide,
+.splide--nav > .splide__track > .splide__list > .splide__slide {
+    border: 0px;
+}
+
+splide--nav
+> .splide__slider
+> .splide__track
+> .splide__list
+> .splide__slide.is-active,
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+    border: 3px solid var(--bs-primary);
+}
+
+#ig-story .font-title.text-primary {
+    color: var(--bs-text-light) !important;
+}
+
+#ig-story a.btn.btn-primary.btn-flex.flex-column.w-100.mb-5.fs-7 {
+    background-color: var(--bs-secondary-light);
+    color: var(--bs-secondary);
+}
+
+#ig-story a.btn.btn-primary.btn-flex.flex-column.w-100.mb-5.fs-7 span {
+    color: var(--bg-primary) !important;
+}
+
+#ig-stories .text-center.aos-init.aos-animate {
+    color: var(--bs-text-light) !important;
+}
+
+/*For IG Story template*/
+#capture.frame,
+#capture.frame .text-primary {
+    color: var(--bs-primary) !important;
+}
+
+/* .btn.btn-secondary:hover:not(.btn-active) {
+    background-color: var(--bs-secondary-hover) !important;
+} */
+.btn.btn-primary .svg-icon svg [fill]:not(.permanent):not(g) {
+    transition: fill 0.3s ease;
+    fill: #ffffff;
+}
+
+/* .btn.btn-primary:hover:not(.btn-active)
+    .svg-icon
+    svg
+    [fill]:not(.permanent):not(g) {
+    transition: fill 0.3s ease;
+    fill: #ffffff;
+} */
+.left-0 {
+    left: 0 !important;
+}
+
+.frame-bridge-bottom img {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    height: auto;
+    width: 60%;
+}
+
+.mr-15 {
+    margin-right: 3.75rem !important;
+}
+
+.ml-15 {
+    margin-left: 3.75rem !important;
+}
+
+.card-shadow-lovestory {
+    box-shadow: 0px 0px 20px 0px rgb(7 112 4 / 30%);
+    border: 10px var(--bs-secondary-light) solid;
+    background-color: var(--bs-secondary-light);
+}
+
+.timeline-label:before {
+    left: 48.8%;
+    top: 40px;
+    border-left: 5px dotted var(--bs-primary);
+    background-color: var(--bs-text-light);
+}
+
+.border-primary-wishes {
+    border: 1px var(--bs-primary) solid;
+}
+
+.flip-image {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-image {
+        height: 88px !important;
+    }
+}
+
+.square-image {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    /* = width for a 1:1 aspect ratio */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-rounded {
+    background-color: var(--invitation-bg);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+}
+
+
+
+.rounded-top {
+    border-top-left-radius: 48px !important;
+    border-top-right-radius: 48px !important;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 50vw !important;
+    border-bottom-right-radius: 50vw !important;
+}
+
+.min-h-rsvp {
+    min-height: 200px !important;
+}
+
+.min-h-90vh {
+    min-height: 90vh !important;
+}
+
+.min-h-85vh {
+    min-height: 85vh !important;
+}
+
+#ig-stories .btn-primary {
+    background-color: var(--bs-text-light) !important;
+    color: var(--bg-primary) !important;
+    border-radius: 20px !important;
+}
+
+#ig-stories .bi {
+    background-color: var(--bs-text-light) !important;
+    color: var(--bg-primary) !important;
+}
+
+#modalGift .btn-light {
+    color: var(--invitation-bg) !important;
+    background-color: var(--bs-primary) !important;
+}
+
+#modalGift .accordion-button:not(.collapsed) {
+    color: var(--bs-primary);
+    background-color: initial;
+}
+
+.bottom-15 {
+    bottom: 15px !important;
+}
+
+.right-10 {
+    right: 2.5rem !important;
+}
+
+.left-40 {
+    left: 40px !important;
+}
+
+.text-color-secondary {
+    color: var(--bg-secondary) !important;
+}
+
+.border-headline {
+    border-top: 1px var(--text-primary) solid;
+    border-bottom: 5px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.border-footer {
+    border-top: 1px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.border-content {
+    border-top: 2px var(--text-primary) solid;
+    border-bottom: 2px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.bg-frame-border {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/frame-border.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.image-frame-size {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-frame-border {
+    border: 6px solid var(--bs-primary); /* The inner, bold border */
+    outline: 2px solid var(--bg-primary); /* The outer, thinner border */
+    outline-offset: 3px; /* Position the outline to overlap the border */
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.image-frame-border-thin {
+    border: 3px solid var(--bs-primary); /* The inner, bold border */
+    outline: 2px solid var(--bs-primary); /* The outer, thinner border */
+    outline-offset: 3px; /* Position the outline to overlap the border */
+}
+
+.image-frame-wanted {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/wanted.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.overlap-image {
+    bottom: -23px;
+    right: -28px;
+}
+
+.min-h-streaming {
+    min-height: 412px;
+}
+
+.bg-bride {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png"), url("https://www.wevitation.com/themes/bloom-blue/img/triangle.png"), url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png"), url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png"), url("https://www.wevitation.com/themes/bloom-blue/img/triangle.png"), url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png");
+    background-repeat: no-repeat;
+    background-position: top+8px left, top center, top+8px right, bottom+8px left, bottom center, bottom+8px right;
+}
+
+.border-page-break-bottom {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png"), url("https://www.wevitation.com/themes/bloom-blue/img/triangle.png"), url("https://www.wevitation.com/themes/bloom-blue/img/border-line.png");
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom center, bottom right;
+}
+
+.bg-decor {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower.svg");
+    background-size: contain;
+    background-position: top center;
+}
+
+.bg-paper {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/bg-paper.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-streaming {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/bg-streaming.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-quote {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower-quote.png"), url("https://www.wevitation.com/themes/bloom-blue/img/flower-quote.png"), url("https://www.wevitation.com/themes/bloom-blue/img/quote.png");
+    background-position: top left, top right, top+40px center;
+    background-repeat: no-repeat;
+    padding-top: 90px !important;
+}
+
+.bg-flower-top {
+    position: relative;
+    top: 120px;
+    width: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-flower-bottom-left {
+    position: absolute;
+    left: -46px;
+    bottom: -53px;
+}
+
+.bg-flower-bottom-right {
+    position: absolute;
+    right: -46px;
+    bottom: -53px;
+}
+
+.bg-flower {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower-decor.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.bg-ig-story {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower-decor.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: -23px;
+}
+
+.bg-card-timeline {
+    background-color: var(--bs-secondary-light) !important;
+    color: var(--bs-text-light) !important;
+}
+
+.bg-love-story {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/starts.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start-big.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start-big.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/starts.png");
+    background-position: top+40px left+20px, top+20px right+20px, center left, right calc(50% - 40px), bottom+20px left+20px, bottom+40px right+20px;
+    background-repeat: no-repeat;
+}
+
+.bg-love-story-decor {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower-decor.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: -23px;
+}
+
+.bg-gallery {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower.png"), url("https://www.wevitation.com/themes/bloom-blue/img/flower.png");
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+}
+
+.bg-schedule {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/border-top-left.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-top-right.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-bottom-left.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-bottom-right.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-left.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-right.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-top-center.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/border-bottom-center.png");
+    background-position: top left, top right, bottom left, bottom right, left center, right center,top center, bottom center;
+    /*background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat-x, repeat-x;*/
+    background-repeat: no-repeat;
+    min-height: 530px;
+}
+
+.bg-rsvp {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/starts.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start-big.png"),
+    url("https://www.wevitation.com/themes/bloom-blue/img/start-big.png");
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+}
+
+.bg-gift {
+    background-image: url("https://www.wevitation.com/themes/bloom-blue/img/flower-decor.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: -23px;
+}
+
+.bg-prokes {
+    background-image: url('https://www.wevitation.com/themes/bloom-blue/img/angel-big.png');
+    background-position: center;
+    background-size: cover; /* Adjust size as needed */
+    background-repeat: no-repeat;
+}
+
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+.border-radius-1 {
+    border-radius: 0 !important;
+}
+
+.ml-10 {
+    margin-left: 1rem !important;
+}
+
+.mr-10 {
+    margin-right: 1rem !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.transform-frame-1 {
+    transform: rotate(90deg);
+}
+
+.transform-frame-2 {
+    transform: rotate(270deg);
+}
+
+.transform-frame-3 {
+    transform: rotate(180deg);
+}
+
+.story-img {
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+.bridge-img-square {
+    aspect-ratio: 4 / 5 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+
+a {
+    color: var(--bg-primary);
+    text-decoration: none;
+}
+
+
+.welcome-background {
+    height: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.cover-frame {
+    background-position: center !important;
+    background-size: cover !important;
+    border: 5px var(--bg-primary) solid;
+}
+.text-light-primary {
+    color: var(--bs-primary-light) !important;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0px 0px 0px 0px rgba(76, 87, 125, 0) !important;
+}
+.card-gift {
+    background-color: var(--invitation-bg);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(76, 87, 125, 0.5) !important;
+}
+.cover-blur-effect{
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+}
+#countdown small.text-size-caption {
+    display: none;
+}
+.countdown-frame{
+    background-color: var(--bs-secondary);
+    border-top-left-radius: 50vh;
+    border-bottom-left-radius: 50vh;
+    border-right: 0px;
+    color: var(--bs-primary);
+}
+#cover #countdown .text-size-content{
+    font-size: var(--font4) !important;
+}
+.parallelogram {
+    --deg:10deg;
+    transform: skew(var(--deg)) !important;
+    -webkit-transform: skew(var(--deg)) !important;
+    -moz-transform: skew(var(--deg)) !important;
+    -o-transform: skew(var(--deg)) !important;
+    background: var(--bs-primary-light);
+    border-radius: 16px;
+  }
+.parallelogram > *{
+    --deg:-10deg;
+    transform: skew(var(--deg)) !important;
+    -webkit-transform: skew(var(--deg)) !important;
+    -moz-transform: skew(var(--deg)) !important;
+    -o-transform: skew(var(--deg)) !important;
+}
+.shake-vertical {
+	-webkit-animation: shake-vertical 15s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+	        animation: shake-vertical 15s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+}
+#gallery .row > * {
+    padding-right: calc(0.5rem* 0.5);
+    padding-left: calc(0.5rem* 0.5);
+    margin-top: 0.5rem;
+}
+.shake-bottom {
+	-webkit-animation: shake-bottom 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+	        animation: shake-bottom 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+}
+#ig-story-title{
+    font-size: var(--font1) !important;
+}
+.vibrate-1-10s {
+	-webkit-animation: vibrate-1 10s linear infinite both;
+	        animation: vibrate-1 10s linear infinite both;
+}
+.vibrate-1-5s {
+	-webkit-animation: vibrate-1 5s linear infinite both;
+	        animation: vibrate-1 5s linear infinite both;
+}
+.vibrate-1-8s {
+	-webkit-animation: vibrate-1 8s linear infinite both;
+	        animation: vibrate-1 8s linear infinite both;
+}
+.vibrate-1-15s {
+	-webkit-animation: vibrate-1 15s linear infinite both;
+	        animation: vibrate-1 15s linear infinite both;
+}
+.shake-vertical {
+	-webkit-animation: shake-vertical 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: shake-vertical 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+.shake-vertical-reverse {
+	-webkit-animation: shake-vertical 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+	        animation: shake-vertical 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+.pulsate-fwd-5s {
+	-webkit-animation: pulsate-fwd 5s ease-in-out infinite both;
+	        animation: pulsate-fwd 5s ease-in-out infinite both;
+}
