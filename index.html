@@ -1182,8 +1182,8 @@
                                                         Wishes
                                                     </div>
                                                     <div wire:id="Q4Knvh9UT05Xadd065h0"
-                                                        wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;Q4Knvh9UT05Xadd065h0&quot;,&quot;name&quot;:&quot;themes.wish&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;demo\/bloom-blue&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;67d3d4c1&quot;,&quot;data&quot;:{&quot;style&quot;:{&quot;button&quot;:&quot;btn btn-secondary rounded w-100 mt-2 text-black&quot;,&quot;button_icon&quot;:&quot;bi bi-chat-heart fs-2x&quot;,&quot;input&quot;:&quot;form-control mb-2 rounded rounded-sm text-primary border rounded border-primary bg-transparent&quot;,&quot;textarea&quot;:&quot;form-control h-150px rounded rounded-sm text-primary border rounded border-primary bg-transparent&quot;,&quot;comment_item&quot;:&quot;rounded rounded-sm text-light p-3 mb-2 bg-primary&quot;,&quot;comment_name&quot;:&quot;fw-bold text-start&quot;,&quot;comment_time&quot;:&quot;fw-light fs-9 mb-1 text-start&quot;,&quot;comment_wish&quot;:&quot;fs-7 text-start&quot;},&quot;data&quot;:[],&quot;guest&quot;:[],&quot;mode&quot;:&quot;demo&quot;,&quot;name&quot;:&quot;Laura Andini&quot;,&quot;comment&quot;:null},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;data&quot;:{&quot;class&quot;:&quot;App\\Models\\Event&quot;,&quot;id&quot;:&quot;62d24438-a861-4159-a27f-b075bc88efb7&quot;,&quot;relations&quot;:[&quot;fontHeading&quot;,&quot;fontContent&quot;,&quot;backsound&quot;,&quot;schedules&quot;,&quot;schedules.event&quot;,&quot;quote&quot;,&quot;love_stories&quot;,&quot;gallery&quot;,&quot;attribute&quot;,&quot;gift_config&quot;,&quot;gift_methods&quot;,&quot;gift_methods.bank&quot;,&quot;wish_config&quot;],&quot;connection&quot;:&quot;mysql&quot;},&quot;guest&quot;:{&quot;class&quot;:&quot;App\\Models\\Guest&quot;,&quot;id&quot;:&quot;289422a6-613c-4447-a9d0-c6a1c6fbd83f&quot;,&quot;relations&quot;:[&quot;schedules&quot;],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;0fe12f6707da091aed9f439c684558c68bbeab21b7b643042d7c125f30e4625a&quot;}}">
-                                                        <form wire:submit.prevent="save">
+                                                        wire:initial-data="">
+                                                        <form id="wishes-form" >
                                                             <div class="mt-5 text-start">
                                                                 <input type="text" name="name" placeholder="Your Name"
                                                                     wire:model.defer="name"
@@ -1197,31 +1197,19 @@
                                                                 <div class="text-danger"></div>
                                                             </div>
                                                             <button type="submit"
+                                                                id="wish-submit-btn"
                                                                 class="btn btn-secondary rounded w-100 mt-2 text-black">
-                                                                <div wire:submit.prevent="save">
+                                                                <div >
                                                                     <i class="bi bi-chat-heart fs-2x"></i>
                                                                     Send
                                                                 </div>
                                                             </button>
                                                         </form>
 
-                                                        @foreach('whish_list')
                                                         <div class="py-3 mt-2 ">
-                                                            <div class="scroll mh-500px">
-                                                                <div
-                                                                    class="rounded rounded-sm text-light p-3 mb-2 bg-primary">
-                                                                    <div class="fw-bold text-start">Laura Andini</div>
-                                                                    <div class="fw-light fs-9 mb-1 text-start">
-                                                                        <span class="bi bi-clock-history me-1"></span>
-                                                                        Wednesday, 05 March 2025 08:19:31
-                                                                    </div>
-                                                                    <div class="fs-7 text-start">Happy Wedding
-                                                                        ${{girl_name}}
-                                                                        ❤️❤️❤️🥳</div>
-                                                                </div>
+                                                            <div class="scroll mh-500px" id="result-wishes">
                                                             </div>
                                                         </div>
-                                                        @endforeach()
                                                     </div>
 
 
@@ -2042,7 +2030,7 @@
     }
 </script>
 
-    <script type="e4a369089111254c86734e3f-text/javascript">
+    <script>
         let players = {};
         const iframes = document.querySelectorAll("#gallery .yt-video"); // khusus tema snap photo
         let lastPlay = "";
@@ -2175,7 +2163,7 @@
     </script>
 
 
-    <script type="e4a369089111254c86734e3f-text/javascript">
+    <script>
         document.addEventListener('livewire:load', function () {
             window.livewire.find('Q4Knvh9UT05Xadd065h0').
             on('error', (data) => {
@@ -2217,7 +2205,7 @@
             });
         });
     </script>
-    <script type="e4a369089111254c86734e3f-text/javascript">
+    <script>
         document.addEventListener('livewire:load', function () {
             window.livewire.find('mzwV4FGWOwXd8ScPtYzk').on('saved', (data) => {
                 if (data['attend']) {
@@ -2236,7 +2224,7 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         var target_name = urlParams.get('target_name');
-        target_name = atob(target_name).toUpperCase();
+        target_name = (target_name == null) ? null : atob(target_name).toUpperCase();
 
         const properties = {
             target_name: target_name == null ? "Tamu Terhormat" : target_name,
@@ -2268,6 +2256,96 @@
         }
 
         templateEngine('#kt_body', properties);
+
+        const url = "https://script.google.com/macros/s/AKfycbx7Kz94Yrgv_9qg_XFdvFP-Zg-JOAkSk7Pn1DRxvKS5QtkMrQ-mAtLpiy1bPsmpYZ4C/exec";
+
+        async function loadWishes() {
+        const container = document.getElementById('result-wishes');
+        
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+
+            const wishes = Array.isArray(data) ? data : [data];
+
+            container.innerHTML = '';
+
+            wishes.forEach(item => {
+                const date = new Date(item.Timestamp).toLocaleString('id-ID', {
+                    dateStyle: 'medium',
+                    timeStyle: 'short'
+                });
+
+                // Buat elemen HTML
+                const wishElement = `
+                    <div class="rounded rounded-sm text-light p-3 mb-2 bg-primary">
+                        <div class="fw-bold text-start">${item.Name}</div>
+                        <div class="fw-light fs-9 mb-1 text-start">
+                            <span class="bi bi-clock-history me-1"></span>
+                            ${date}
+                        </div>
+                        <div class="fs-7 text-start">${item.Wish}</div>
+                    </div>
+                `;
+                
+                // Masukkan ke dalam container
+                container.innerHTML += wishElement;
+            });
+
+        } catch (error) {
+            console.error("Gagal memuat ucapan:", error);
+            container.innerHTML = '<div class="text-danger text-center">Gagal memuat data.</div>';
+        }
+
+        $(document).ready(function() {
+            $('#wishes-form').on('submit', function(e) {
+                e.preventDefault();
+                // Ambil data dari input (menggunakan name attribute)
+                let name = $('input[name="name"]').val();
+                let comment = $('textarea[name="comment"]').val();
+                let submitBtn = $('#wish-submit-btn');
+        
+                // Ganti teks tombol saat loading
+                submitBtn.prop('disabled', true).text('Sending...');
+        
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdScyqRHeAxjDBo2tJAwG1nV61_2fqhzrdfoh_kaDYbVQNVyQ/formResponse",
+                    data: {
+                        "entry.186162613": name,
+                        "entry.1696458407": comment
+                    },
+                    type: "POST",
+                    dataType: "xml",
+                    complete: function() {
+                        Swal.fire({
+                            text: "Berhasil mengirim",
+                            icon: "success",
+                            buttonsStyling: false,
+                            confirmButtonText: "Close",
+                            customClass: {
+                                confirmButton: "btn btn-primary",
+                                text: "text-dark"
+                            }
+                        }).then((result)=>{
+                            if (result.isConfirmed) {
+                                $('html, body').animate({
+                                    scrollTop: $("#wish").offset().top
+                                }, 10);
+                            }
+                        });
+
+                        $('#wishes-form')[0].reset();
+                        submitBtn.prop('disabled', false).html('<i class="bi bi-chat-heart fs-2x"></i> Send');
+                        
+                        loadWishes();
+                    }
+                });
+            });
+        });
+    }
+
+    // Jalankan fungsi saat halaman dimuat
+    loadWishes();
     </script>
 
     <!--end::Javascript-->
