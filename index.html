@@ -1159,6 +1159,7 @@
                                                             <div class="text-center row justify-content-center"
                                                                 data-aos="fade-up">
                                                                 <button
+                                                                    id="btnOpenModalRSVP"
                                                                     class="btn btn-primary text-primary rounded py-5"
                                                                     data-bs-toggle="modal" data-bs-target="#modalRSVP">
                                                                     <span>Confirm your Attendance</span>
@@ -1520,7 +1521,7 @@
         wire:ignore.self class="modal fade" tabindex="-1" id="modalRSVP">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form wire:submit.prevent="save">
+                <form wire:submit.prevent="save" id="attendance-form">
                     <div class="modal-header">
                         <h5 class="modal-title">Confirm your Attendance</h5>
                         <!--begin::Close-->
@@ -2233,7 +2234,7 @@
             target_name: target_name == null ? "Tamu Terhormat" : target_name,
             girl_name: "Risma",
             boy_name: "Firman",
-            event_date: "Rabu, 25 Maret 2026",
+            event_date: "Wednesday, 25 March 2026",
             girl_fullname: "Risma",
             boy_fullname: "Firman",
             event_time: "12.30 - 15.00",
@@ -2341,6 +2342,58 @@
                         submitBtn.prop('disabled', false).html('<i class="bi bi-chat-heart fs-2x"></i> Send');
                         
                         loadWishes();
+                    }
+                });
+            });
+
+            $('#attendance-form').on('submit', function(e) {
+                e.preventDefault();
+                // Ambil data dari input (menggunakan name attribute)
+                let name = $('input[name="name-attendance"]').val();
+                let people = $('input[name="people"]').val();
+                let submitBtn = $('#attendance-btn');
+        
+                // Ganti teks tombol saat loading
+                submitBtn.prop('disabled', true).text('Sending...');
+        
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSd3BLe0RxwpCXwdwD7qwaszsHTsDaddCgQAR-TW9wbUrZm-qg/formResponse",
+                    data: {
+                        "entry.2124968512": name,
+                        "entry.752673360": people,
+                        "entry.639315974": target_name
+
+
+                    },
+                    type: "POST",
+                    dataType: "xml",
+                    complete: function() {
+                        Swal.fire({
+                            text: "Berhasil mengirim",
+                            icon: "success",
+                            buttonsStyling: false,
+                            confirmButtonText: "Close",
+                            customClass: {
+                                confirmButton: "btn btn-primary",
+                                text: "text-dark"
+                            }
+                        }).then((result)=>{
+                            if (result.isConfirmed) {
+                                $('html, body').animate({
+                                    scrollTop: $("#gift").offset().top
+                                }, 10);
+                            }
+                        });
+
+                        $('#attendance-form')[0].reset();
+                        submitBtn.prop('disabled', false).html('<i class="bi bi-chat-heart fs-2x"></i> Send');  
+                        const modalElement = document.getElementById('modalRSVP');
+                        const modalInstance = bootstrap.Modal.getInstance(modalElement); 
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+
+                        $('#btnOpenModalRSVP').prop('disabled', true).text('Confirmed!');
                     }
                 });
             });
