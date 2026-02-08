@@ -1,82 +1,183 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Link Generator - Auto Copy</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #f0f2f5; }
-        .card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 450px; text-align: center; }
-        h3 { color: #333; margin-bottom: 1.5rem; }
-        input { width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 8px; box-sizing: border-box; transition: border-color 0.3s; }
-        input:focus { border-color: #6b5b95; outline: none; }
-        button { width: 100%; padding: 12px; background: #6b5b95; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1rem; transition: 0.3s; }
-        button:hover { background: #544675; }
-        
-        #result-container { margin-top: 25px; display: none; text-align: left; animation: fadeIn 0.5s; }
-        .copy-box { background: #f8f9fa; border: 1px dashed #6b5b95; padding: 15px; border-radius: 8px; cursor: pointer; position: relative; word-break: break-all; color: #444; font-size: 0.9rem; }
-        .copy-box:hover { background: #f1f0f7; }
-        .hint { font-size: 0.75rem; color: #888; margin-top: 8px; display: block; text-align: center; }
-        
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
-</head>
-<body>
-
-<div class="card">
-    <h3>💍 Link Generator</h3>
-    <input type="text" id="nama" placeholder="Masukkan Nama Tamu..." onkeypress="if(event.key === 'Enter') generateLink()">
-    <button onclick="generateLink()">Generate & Copy Link</button>
-
-    <div id="result-container">
-        <label><strong>Klik kotak di bawah untuk menyalin:</strong></label>
-        <div class="copy-box" id="finalLink" onclick="copyToClipboard()"></div>
-        <span class="hint" id="copyHint">Klik untuk menyalin link</span>
-    </div>
-</div>
-
-<script>
-    function generateLink() {
-        const namaInput = document.getElementById('nama').value;
-        const resultContainer = document.getElementById('result-container');
-        const finalLinkDiv = document.getElementById('finalLink');
-        const hint = document.getElementById('copyHint');
-
-        if (namaInput.trim() === "") {
-            alert("Silakan masukkan nama tamu terlebih dahulu.");
-            return;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f0f2f5;
         }
 
-        // Encode ke Base64 (mendukung karakter spesial/emoji)
-        const base64Name = btoa(unescape(encodeURIComponent(namaInput)));
-        const fullUrl = "https://weddrism-maa.github.io/wedding-invitation?target_name=" + base64Name;
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
 
-        // Tampilkan link
-        finalLinkDiv.innerText = fullUrl;
-        resultContainer.style.display = "block";
-        hint.innerText = "Klik kotak untuk menyalin link";
-        hint.style.color = "#888";
-    }
+        h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
 
-    function copyToClipboard() {
-        const textToCopy = document.getElementById('finalLink').innerText;
-        const hint = document.getElementById('copyHint');
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
 
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            hint.innerText = "✅ Berhasil disalin ke clipboard!";
-            hint.style.color = "#28a745";
-            
-            // Opsional: Alert kecil
-            setTimeout(() => {
-                hint.innerText = "Klik kotak untuk menyalin link";
-                hint.style.color = "#888";
-            }, 3000);
-        }).catch(err => {
-            console.error('Gagal menyalin: ', err);
-            alert("Gagal menyalin link secara otomatis.");
-        });
-    }
-</script>
+        input:focus {
+            border-color: #6b5b95;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6b5b95;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #544675;
+        }
+
+        #result-container {
+            margin-top: 25px;
+            display: none;
+            text-align: left;
+            animation: fadeIn 0.5s;
+        }
+
+        .copy-box {
+            background: #f8f9fa;
+            border: 1px dashed #6b5b95;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            position: relative;
+            word-break: break-all;
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        .copy-box:hover {
+            background: #f1f0f7;
+        }
+
+        .hint {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 8px;
+            display: block;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h3>💍 Link Generator</h3>
+        <input type="text" id="nama" placeholder="Masukkan Nama Tamu..."
+            onkeypress="if(event.key === 'Enter') generateLink()">
+        <button onclick="generateLink()">Generate & Copy Link</button>
+
+        <div id="result-container">
+            <label><strong>Klik kotak di bawah untuk menyalin:</strong></label>
+            <div class="copy-box" id="finalLink" onclick="copyToClipboard()"></div>
+            <span class="hint" id="copyHint">Klik untuk menyalin link</span>
+        </div>
+    </div>
+
+    <script>
+        function generateLink() {
+            const namaInput = document.getElementById('nama').value;
+            const resultContainer = document.getElementById('result-container');
+            const finalLinkDiv = document.getElementById('finalLink');
+            const hint = document.getElementById('copyHint');
+
+            if (namaInput.trim() === "") {
+                alert("Silakan masukkan nama tamu terlebih dahulu.");
+                return;
+            }
+
+            // Encode ke Base64 (mendukung karakter spesial/emoji)
+            const base64Name = btoa(unescape(encodeURIComponent(namaInput)));
+            const fullUrl = "https://weddrism-maa.github.io/wedding-invitation?target_name=" + base64Name;
+
+            const textMessage = `Assalamu’alaikum Wr.Wb 
+                    Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i *${namaInput}*  untuk menghadiri acara pernikahan kami  \n\n
+                    ${fullUrl} \n
+                    Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
+                    Mohon maaf perihal undangan hanya di bagikan melalui pesan ini, karena keterbatasan jarak & waktu.
+                    Pesan ini adalah undangan resmi sebagai pengganti apabila undangan cetak BELUM/TIDAK DITERIMA oleh Bapak/Ibu/Saudara/I Diharapkan melalui media ini sebagai pengganti undangan resmi maksud dan tujuan kami dapat tersampaikan. 
+
+                    Terima kasih banyak atas perhatiannya.
+
+                    Kami yang berbahagia,
+                    Risma & Firman`
+
+            // Tampilkan link
+            finalLinkDiv.innerText = textMessage;
+            resultContainer.style.display = "block";
+            hint.innerText = "Klik kotak untuk menyalin link";
+            hint.style.color = "#888";
+        }
+
+        function copyToClipboard() {
+            const textToCopy = document.getElementById('finalLink').innerText;
+            const hint = document.getElementById('copyHint');
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                hint.innerText = "✅ Berhasil disalin ke clipboard!";
+                hint.style.color = "#28a745";
+
+                // Opsional: Alert kecil
+                setTimeout(() => {
+                    hint.innerText = "Klik kotak untuk menyalin link";
+                    hint.style.color = "#888";
+                }, 3000);
+            }).catch(err => {
+                console.error('Gagal menyalin: ', err);
+                alert("Gagal menyalin link secara otomatis.");
+            });
+        }
+    </script>
 
 </body>
+
 </html>
