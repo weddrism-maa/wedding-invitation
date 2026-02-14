@@ -622,6 +622,12 @@
                                                             </div>
                                                         </div>
                                                         <div class="text-start w-100 px-15 position-relative">
+                                                            <div class="ps-0 pt-10 pe-10">
+                                                                <div id="countdown" class="text-start d-flex justify-content-start">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-start w-100 px-15 position-relative">
                                                             <div class="pb-5 text-start mt-10 text-primary">
                                                                 <div class="">
                                                                     <div class="">To:</div>
@@ -1604,13 +1610,14 @@
 
     </script>
     <script type="e4a369089111254c86734e3f-text/javascript">
-    var time = "2025-12-31 07:00:00";
+    
+        var time = "2026-03-25 07:00:00";
     $('#countdown').countdown(time, function (event) {
         var $this = $(this).html(event.strftime('' +
-            '<div class=""><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%D</span><br><small class="text-size-caption">Days</small></div>' +
-            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%H</span><br><small class="text-size-caption">Hr</small></div>' +
-            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%M</span><br><small class="text-size-caption">Min</small></div>' +
-            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%S</span><br><small class="text-size-caption">Sec</small></div>'
+            '<div class=""><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%D</span><br><p class="text-size-caption text-center">Days</p></div>' +
+            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%H</span><br><p class="text-size-caption text-center">Hr</p></div>' +
+            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%M</span><br><p class="text-size-caption text-center">Min</p></div>' +
+            '<div><span class="badge badge-circle badge-primary label-countdown text-size-content p-3">%S</span><br><p class="text-size-caption text-center">Sec</p></div>'
         ));
     });
 </script>
@@ -1665,7 +1672,7 @@
             akad_date: "Wednesday, 25 March 2026",
             akad_time: "07.00 - 08.00",
             event_time: "09.00 - 13.00",
-            event_location: "Rumah Kami",
+            event_location: "Location",
             event_address: "Dsn. Gebyaran, Desa Puhjarak, Kec. Plemahan ",
             event_maps: "https://maps.app.goo.gl/9ncBX98GpJsp1NAMA?g_st=aw",
             event_datetime: "20260325T000000Z/20260325T010000Z",
